@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.cell-phone {
+  margin: 15% auto;
+  border: 1px solid black;
+  width: 300px;
+  height: 600px;
+  border-radius: 40px;
+  border-left: 15px solid black;
+  border-right: 15px solid black;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 30px;
+  height: 40px;
+  background: black;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+header span {
+  display: block;
+  height: 15px;
+  width: 15px;
+  background: white;
+  border-radius: 50%;
+}
+
+.screen {
+  background: white;
+  height: 498px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.status-bar {
+  background: rgba(205, 28, 28, 1);
+  color: white;
+  font-size: 13px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.status-bar span {
+  font-size: 12px;
+  margin: 0 4px;
+}
+.status-bar i {
+  margin: 0 4px;
+}
+
+.temp {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.temp h1 {
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: lighter;
+}
+
+.temp input {
+  font-size: 60px;
+  font-weight: lighter;
+  border: none;
+  border-top: 0;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  text-align: center;
+  color: white;
+}
+
+.fahrenheit-container {
+  height: 50%;
+  background: rgba(226, 46, 46, 0.9);
+  padding: 20px;
+  color: white;
+  clip-path: polygon(
+    50% 0%,
+    100% 0,
+    100% 43%,
+    100% 79%,
+    48% 100%,
+    49% 100%,
+    0 77%,
+    0% 43%,
+    0 0
+  );
+}
+
+.celcius-container {
+  height: 50%;
+  padding: 20px;
+  color: rgba(226, 46, 46, 0.9);
+}
+
+.celcius-container h1 {
+  margin-top: 30px;
+}
+
+.celcius-container input[type="number"] {
+  border-bottom: 1px solid rgba(226, 46, 46, 0.9);
+  color: rgba(226, 46, 46, 0.9);
+}
+
+footer {
+  background: black;
+  height: 40px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
